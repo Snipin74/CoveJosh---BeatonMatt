@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossHealthManager : MonoBehaviour {
 
-    public static float CurrentHealth;
+    public float CurrentHealth;
     public float MaxHealth;
 
 
@@ -15,14 +15,17 @@ public class BossHealthManager : MonoBehaviour {
 
     private void Update()
     {
+       
         if(CurrentHealth <= 0)
         {
             Destroy(gameObject);
         }
     }
 
-    /*public void applyDamage(int amount)
+    public void applyDamage(int amount)
     {
+
         CurrentHealth -= amount;
-    }*/
+        Debug.Log(gameObject + " " + CurrentHealth);
+    }
 }

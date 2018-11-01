@@ -17,13 +17,15 @@ public class FemaleNinjaController : MonoBehaviour {
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
 
-    public static bool IsAttacking = false;
+    public bool IsAttacking = false;
     public GameObject ninjaStar;
+
+    BossHealthManager BHM;
 
     // Use this for initialization
     void Start()
     {
-
+        BHM = gameObject.GetComponent<BossHealthManager>();
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
 
@@ -71,9 +73,11 @@ public class FemaleNinjaController : MonoBehaviour {
     //   }
 
       if (collision.tag == "Ninja Star")
-       {
-            BossHealthManager.CurrentHealth -= 1f;
-          //Destroy(gameObject);
+        {
+            if (BHM)
+                BHM.applyDamage(1);
+
+            //Destroy(gameObject);
        }
      
     }

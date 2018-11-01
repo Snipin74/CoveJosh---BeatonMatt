@@ -327,6 +327,7 @@ MonoBehaviour:
   enemyStar: {fileID: 0}
   kenji: {fileID: 0}
   ThrowPoint: {fileID: 0}
+  ThrowWaitTime: 0
 --- !u!114 &114677041805744834
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -118,7 +118,6 @@ public class PlayerController : MonoBehaviour {
     {
         JumpAttacking = false;
         moveSpeed = 10;
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -134,6 +133,7 @@ public class PlayerController : MonoBehaviour {
         {
             SceneManager.LoadScene("DeathMenu");
         }
+
     }
 }
 

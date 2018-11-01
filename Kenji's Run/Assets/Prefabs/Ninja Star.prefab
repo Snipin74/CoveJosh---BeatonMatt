@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58931853691048740}
   - component: {fileID: 50840592251932670}
   - component: {fileID: 114294186455933734}
+  - component: {fileID: 114852653729528570}
   m_Layer: 0
   m_Name: Ninja Star
   m_TagString: Ninja Star
@@ -91,7 +92,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starSpeed: 30
   rotationSpeed: -200
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+    type: 2}
+  damageToGive: 5
+--- !u!114 &114852653729528570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333634218342390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d73e9a5e41eb44589fea94b9b518f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 5
+  damageBurst: {fileID: 0}
 --- !u!212 &212372906141247114
 SpriteRenderer:
   m_ObjectHideFlags: 1

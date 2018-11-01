@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 95754636914686052}
   - component: {fileID: 114038188151880532}
   - component: {fileID: 114560798263544326}
+  - component: {fileID: 114331902360156304}
+  - component: {fileID: 114136285242967946}
   m_Layer: 0
   m_Name: FinalBoss 1
   m_TagString: Enemy
@@ -343,6 +345,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7388750e15f3e40bdd56fe31cdcfef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114136285242967946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085115999562872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfcf20ed14b50648a257ed680be4bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  MaxHealth: 15
+--- !u!114 &114331902360156304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085115999562872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4325e2e1c5b9d1a4293203d0d8cfc2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHealthText: {fileID: 0}
+  maxHealth: 50
 --- !u!114 &114560798263544326
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -67,13 +67,14 @@ public class FemaleNinjaController : MonoBehaviour {
     {
         if (collision.tag == "Sword")
         {
-            Destroy(gameObject);
+           Destroy(gameObject);
         }
 
         if (collision.tag == "Ninja Star")
         {
             Destroy(gameObject);
         }
+     
     }
 }
 

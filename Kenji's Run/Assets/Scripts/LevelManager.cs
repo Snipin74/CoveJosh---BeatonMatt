@@ -8,8 +8,12 @@ public class LevelManager : MonoBehaviour {
 
     private PlayerController thePlayer;
 
-	// Use this for initialization
-	void Start () {
+    public GameWinMenu gameWinMenu;
+
+    public GameOverMenu gameOverMenu;
+
+    // Use this for initialization
+    void Start () {
         thePlayer = FindObjectOfType<PlayerController>();
 		
 	}

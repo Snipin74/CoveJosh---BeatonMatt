@@ -5030,8 +5030,10 @@ GameObject:
   m_Component:
   - component: {fileID: 212631027}
   - component: {fileID: 212631026}
+  - component: {fileID: 212631029}
+  - component: {fileID: 212631028}
   m_Layer: 0
-  m_Name: 2048x512_0
+  m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5090,12 +5092,48 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 212631025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 284.93784, y: 1.86, z: 0}
+  m_LocalPosition: {x: -3.85, y: -2.09, z: 0}
   m_LocalScale: {x: 0.77501, y: 0.50000805, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212631028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212631025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929a2198c1eef0b4f8202838e9487087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &212631029
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212631025}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1001 &234213395
 Prefab:
   m_ObjectHideFlags: 0
@@ -12113,6 +12151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckpoint: {fileID: 124960440}
+  gameWinMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}
 --- !u!4 &1542201958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4327622763243700, guid: 122f013c88f5cbd42b28ec3e5e4536ee,

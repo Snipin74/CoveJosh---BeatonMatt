@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour {
         moveSpeed = 10;
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.gameObject.name.Equals("Attack"))
@@ -131,9 +131,9 @@ public class PlayerController : MonoBehaviour {
         }
         if (HealthManager.health < 1)
         {
-            Application.LoadLevelAdditive(5);
+            Application.LoadLevel(5);
         }
 
-    }*/
+    }
 }
 

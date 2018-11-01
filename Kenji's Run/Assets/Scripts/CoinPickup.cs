@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CoinPickup : MonoBehaviour {
 
     public int pointsToGive;
 
     private ScoreManager scoreHandler;
 
-    //private AudioSource coinSound;
+    private AudioSource coinSound;
 
 
 
@@ -17,7 +18,7 @@ public class CoinPickup : MonoBehaviour {
     {
 
         scoreHandler = FindObjectOfType<ScoreManager>();
-        //coinSound = GameObject.Find("Coin").GetComponent<AudioSource>();
+        coinSound = GameObject.Find("Coin").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,15 +34,15 @@ public class CoinPickup : MonoBehaviour {
             scoreHandler.AddPoints(pointsToGive);
             gameObject.SetActive(false);
 
-            //if (coinSound.isPlaying)
-           // {
-               // coinSound.Stop();
-               // coinSound.Play();
-           // }
-           // else
-           // {
-               // coinSound.Play();
-           // }
+            if (coinSound.isPlaying)
+            {
+                coinSound.Stop();
+                coinSound.Play();
+            }
+            else
+            {
+                coinSound.Play();
+            }
         }
     }
 }

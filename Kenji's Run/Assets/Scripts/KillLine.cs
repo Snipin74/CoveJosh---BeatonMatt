@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class KillLine : MonoBehaviour {
+
+    public PlayerController targetPlayer;
+
+    // Use this for initialization
+    void Start()
+    {
+        targetPlayer = GameObject.FindObjectOfType(typeof(PlayerController)) as PlayerController;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        print("Object Collided");
+    }
+}

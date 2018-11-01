@@ -21,7 +21,9 @@ public class RockFall : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        m_GravityDirection = GravityDirection.down;
-
+         m_GravityDirection = GravityDirection.down;
+   
     }
+
+   
 }

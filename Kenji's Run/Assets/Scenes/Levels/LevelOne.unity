@@ -215,12 +215,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4897675964471016, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.21
+      value: 2.17
       objectReference: {fileID: 0}
     - target: {fileID: 58978498154589390, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
         type: 2}
       propertyPath: m_Radius
-      value: 0.25
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}

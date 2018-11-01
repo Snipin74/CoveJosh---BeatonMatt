@@ -11,8 +11,6 @@ public class NinjaStar : MonoBehaviour {
 
     private Rigidbody2D starRidgidBody; // Player's RidgidBody
 
-    public int damageToGive;
-
     // Use this for initialization
     void Start () {
 
@@ -38,10 +36,6 @@ public class NinjaStar : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            collision.GetComponent<BossHealthManager>().applyDamage(damageToGive);
-        }
-
+        Destroy(gameObject);
     }
 }

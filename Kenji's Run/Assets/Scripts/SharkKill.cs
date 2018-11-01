@@ -21,6 +21,7 @@ public class SharkKill : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other)
     {
+        Destroy(gameObject);
         print("Object Collided");
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BossHealthManager : MonoBehaviour {
 
-    public int CurrentHealth;
-    public int MaxHealth;
+    public static float CurrentHealth;
+    public float MaxHealth;
 
 
     private void Start()
@@ -21,8 +21,8 @@ public class BossHealthManager : MonoBehaviour {
         }
     }
 
-    public void applyDamage(int amount)
+    /*public void applyDamage(int amount)
     {
         CurrentHealth -= amount;
-    }
+    }*/
 }

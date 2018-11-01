@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour {
     public bool Attacking = false;
     public bool JumpAttacking = false;
     public static bool isAttacking;
-    public LevelManager levelManager;
-
     public Transform firepoint;
     public GameObject NinjaStar;
 
@@ -33,7 +31,6 @@ public class PlayerController : MonoBehaviour {
         myCollider = GetComponent<Collider2D>();
         myAnimator = GetComponent<Animator>();
         myTransform = GetComponent<Transform>();
-        levelManager = FindObjectOfType<LevelManager>();
 
     }
 
@@ -123,13 +120,18 @@ public class PlayerController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.name.Equals("Attack"))
+       if (collision.gameObject.CompareTag("Attack"))
         {
-            HealthManager.health -= 1f;
+           HealthManager.health -= 5f;
             //levelManager.RespawnPlayer();
             // SceneManager.LoadScene("DeathMenu");
-        }
+       }
         if (HealthManager.health < 1)
+        {
+            Application.LoadLevel(5);
+        }
+
+        if (collision.gameObject.CompareTag("Shark"))
         {
             Application.LoadLevel(5);
         }

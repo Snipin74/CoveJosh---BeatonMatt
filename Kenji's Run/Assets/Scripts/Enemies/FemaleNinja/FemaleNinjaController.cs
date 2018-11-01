@@ -65,15 +65,16 @@ public class FemaleNinjaController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Sword")
-        {
-           Destroy(gameObject);
-        }
+    //    if (collision.tag == "Sword")
+    //    {
+    //       Destroy(gameObject);
+    //   }
 
-        if (collision.tag == "Ninja Star")
-        {
-            Destroy(gameObject);
-        }
+      if (collision.tag == "Ninja Star")
+       {
+            BossHealthManager.CurrentHealth -= 1f;
+          //Destroy(gameObject);
+       }
      
     }
 }

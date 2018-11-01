@@ -2,13 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FemaleNinjaAttack : MonoBehaviour {
+public class FemaleNinjaAttack : MonoBehaviour
+{
+    FemaleNinjaController FNC;
+
+    void Start()
+    {
+        FNC = gameObject.GetComponentInParent<FemaleNinjaController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            FemaleNinjaController.IsAttacking = true;
+            if(FNC)
+                FNC.IsAttacking = true;
         }
     }
 
@@ -16,7 +24,8 @@ public class FemaleNinjaAttack : MonoBehaviour {
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            FemaleNinjaController.IsAttacking = false;
+            if(FNC)
+                FNC.IsAttacking = false;
         }
     }
 }

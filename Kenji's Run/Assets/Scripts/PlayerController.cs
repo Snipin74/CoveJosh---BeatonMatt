@@ -120,20 +120,20 @@ public class PlayerController : MonoBehaviour {
         moveSpeed = 10;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.gameObject.name.Equals("Attack"))
         {
             HealthManager.health -= 1f;
             //levelManager.RespawnPlayer();
-           // SceneManager.LoadScene("DeathMenu");
+            // SceneManager.LoadScene("DeathMenu");
         }
-        if(HealthManager.health < 1)
+        if (HealthManager.health < 1)
         {
-            SceneManager.LoadScene("DeathMenu");
+            Application.LoadLevelAdditive(5);
         }
 
-    }
+    }*/
 }
 

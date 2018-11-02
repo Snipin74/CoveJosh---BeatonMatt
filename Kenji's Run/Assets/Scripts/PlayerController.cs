@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
     public static bool isAttacking;
     public Transform firepoint;
     public GameObject NinjaStar;
+    public AudioSource JumpSound;
 
     // Use this for initialization
     void Start () {
@@ -80,19 +81,12 @@ public class PlayerController : MonoBehaviour {
             if (grounded)
             {
                 myRidgidBody.velocity = new Vector2(myRidgidBody.velocity.x, jumpForce);
-<<<<<<< HEAD
-<<<<<<< HEAD
-                JumpSound.Play();
 
             }
             if (JumpSound.isPlaying)
             {
                 JumpSound.Stop();
                 JumpSound.Play();
-=======
->>>>>>> parent of c6515c7... sound
-=======
->>>>>>> parent of c6515c7... sound
             }
         }
 

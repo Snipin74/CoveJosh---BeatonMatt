@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
     public Transform firepoint;
     public GameObject NinjaStar;
 
+    public AudioSource JumpSound;
+
     // Use this for initialization
     void Start () {
 
@@ -79,7 +81,19 @@ public class PlayerController : MonoBehaviour {
             if (grounded)
             {
                 myRidgidBody.velocity = new Vector2(myRidgidBody.velocity.x, jumpForce);
+
+               
             }
+            if (JumpSound.isPlaying)
+            {
+                JumpSound.Stop();
+                JumpSound.Play();
+            }
+            else
+            {
+                JumpSound.Play();
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))

@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour {
             {
                 myRidgidBody.velocity = new Vector2(myRidgidBody.velocity.x, jumpForce);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 JumpSound.Play();
 
             }
@@ -88,6 +89,8 @@ public class PlayerController : MonoBehaviour {
             {
                 JumpSound.Stop();
                 JumpSound.Play();
+=======
+>>>>>>> parent of c6515c7... sound
 =======
 >>>>>>> parent of c6515c7... sound
             }

@@ -224,7 +224,11 @@ Prefab:
     - target: {fileID: 4064269032745396, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -2.21
+=======
+      value: -2.4
+>>>>>>> parent of c6515c7... sound
 =======
       value: -2.4
 >>>>>>> parent of c6515c7... sound
@@ -254,6 +258,7 @@ Prefab:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 61210565256658126, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+<<<<<<< HEAD
         type: 2}
       propertyPath: m_Enabled
       value: 0
@@ -269,6 +274,16 @@ Prefab:
       propertyPath: grounded
       value: 0
 =======
+=======
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+        type: 2}
+      propertyPath: levelManager
+      value: 
+>>>>>>> parent of c6515c7... sound
       objectReference: {fileID: 0}
     - target: {fileID: 4897675964471016, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.x
@@ -278,6 +293,9 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 1
+<<<<<<< HEAD
+>>>>>>> parent of c6515c7... sound
+=======
 >>>>>>> parent of c6515c7... sound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5717,9 +5735,14 @@ Transform:
   - {fileID: 855692138}
   - {fileID: 493278382}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1916612588}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+=======
+  m_Father: {fileID: 1037753727}
+  m_RootOrder: 16
+>>>>>>> parent of c6515c7... sound
 =======
   m_Father: {fileID: 1037753727}
   m_RootOrder: 16
@@ -12482,6 +12505,7 @@ Transform:
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1350322587
 GameObject:
   m_ObjectHideFlags: 0
@@ -12606,6 +12630,8 @@ Transform:
   m_Father: {fileID: 1037753727}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of c6515c7... sound
 =======
 >>>>>>> parent of c6515c7... sound
 --- !u!4 &1360563725 stripped
@@ -14416,6 +14442,7 @@ MeshFilter:
   m_GameObject: {fileID: 2026551189}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!82 &2026551194
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14511,6 +14538,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> parent of c6515c7... sound
 =======
 >>>>>>> parent of c6515c7... sound
 --- !u!1001 &2027265129

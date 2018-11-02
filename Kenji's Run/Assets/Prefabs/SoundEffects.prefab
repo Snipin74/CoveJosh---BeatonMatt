@@ -36,7 +36,11 @@ GameObject:
   - component: {fileID: 4626106309622216}
   - component: {fileID: 82758415298068648}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: Pickup
+=======
+  m_Name: Coin
+>>>>>>> parent of c6515c7... sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,6 +73,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!4 &4964593926069286
 Transform:
@@ -179,6 +184,9 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!82 &82897447220924130
+=======
+--- !u!82 &82758415298068648
+>>>>>>> parent of c6515c7... sound
 =======
 --- !u!82 &82758415298068648
 >>>>>>> parent of c6515c7... sound

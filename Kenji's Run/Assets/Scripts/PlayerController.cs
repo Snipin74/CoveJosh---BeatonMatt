@@ -134,12 +134,12 @@ public class PlayerController : MonoBehaviour {
        }
        if (HealthManager.health < 1)
        {
-           SceneManager.LoadScene(5);
+          // SceneManager.LoadScene(5);
        }
 
        if (collision.gameObject.CompareTag("Shark"))
        {
-            SceneManager.LoadScene(5);
+            //SceneManager.LoadScene(5);
        }
 
     }

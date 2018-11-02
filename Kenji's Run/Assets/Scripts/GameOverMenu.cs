@@ -7,18 +7,18 @@ public class GameOverMenu : MonoBehaviour {
 
     public string mainMenuLevel;
 
-    //public AudioSource death;
+   // public AudioSource death;
     //public AudioSource background;
 
-   /* public void RestartGame()
+    public void RestartGame()
     {
-        FindObjectOfType<LevelManager>().Reset();
-        AudioListener.pause = false;
-        death.Stop();
-        background.Play();
+        FindObjectOfType<GameManager>().Reset();
+      //  AudioListener.pause = false;
+        //death.Stop();
+        //background.Play();
 
 
-    }*/
+    }
 
     public void MainMenu()
     {
@@ -32,16 +32,19 @@ public class GameOverMenu : MonoBehaviour {
     void Start()
     {
 
-       // background.Stop();
-        //death.Play();
+        //background.Stop();
+      //  death.Play();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //background.Stop();
+       // background.Stop();
 
 
     }
 }
+
+
+

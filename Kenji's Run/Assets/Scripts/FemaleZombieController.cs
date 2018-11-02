@@ -60,7 +60,6 @@ public class FemaleZombieController : MonoBehaviour {
         }
         else
             myAnimator.SetBool("Attack", false);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

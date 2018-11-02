@@ -26,6 +26,5 @@ public class BossHealthManager : MonoBehaviour {
     {
 
         CurrentHealth -= amount;
-        Debug.Log(gameObject + " " + CurrentHealth);
     }
 }

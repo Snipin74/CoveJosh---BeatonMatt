@@ -80,8 +80,6 @@ public class FemaleNinjaController : MonoBehaviour {
         {
             if (healthManager)
                 healthManager.applyDamage(1);
-
-            Destroy(gameObject);
         }
      
     }

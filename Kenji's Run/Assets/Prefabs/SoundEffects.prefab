@@ -9,16 +9,16 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1358158569201472}
+  m_RootGameObject: {fileID: 1364039920494550}
   m_IsPrefabAsset: 1
---- !u!1 &1358158569201472
+--- !u!1 &1364039920494550
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4820821288037728}
+  - component: {fileID: 4842359669432290}
   m_Layer: 0
   m_Name: SoundEffects
   m_TagString: Untagged
@@ -26,66 +26,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1403812970674132
+--- !u!1 &1852829250337820
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4964593926069286}
-  - component: {fileID: 82410089416938066}
+  - component: {fileID: 4626106309622216}
+  - component: {fileID: 82758415298068648}
   m_Layer: 0
-  m_Name: Jump
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1499205275961720
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4404556114454574}
-  - component: {fileID: 82897447220924130}
-  m_Layer: 0
+<<<<<<< HEAD
   m_Name: Pickup
+=======
+  m_Name: Coin
+>>>>>>> parent of c6515c7... sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4404556114454574
+--- !u!4 &4626106309622216
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1499205275961720}
+  m_GameObject: {fileID: 1852829250337820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4820821288037728}
+  m_Father: {fileID: 4842359669432290}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4820821288037728
+--- !u!4 &4842359669432290
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1358158569201472}
+  m_GameObject: {fileID: 1364039920494550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 57.964542, y: 0.74593294, z: 3}
   m_LocalScale: {x: 0.171, y: 0.132, z: 1}
   m_Children:
-  - {fileID: 4404556114454574}
-  - {fileID: 4964593926069286}
+  - {fileID: 4626106309622216}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &4964593926069286
 Transform:
   m_ObjectHideFlags: 1
@@ -195,17 +184,23 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!82 &82897447220924130
+=======
+--- !u!82 &82758415298068648
+>>>>>>> parent of c6515c7... sound
+=======
+--- !u!82 &82758415298068648
+>>>>>>> parent of c6515c7... sound
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1499205275961720}
+  m_GameObject: {fileID: 1852829250337820}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d9559fd189000b846b5f60fda49dda97, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.102
+  m_Volume: 0.26
   m_Pitch: 1
   Loop: 0
   Mute: 0

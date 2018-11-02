@@ -136,20 +136,18 @@ public class PlayerController : MonoBehaviour {
     {
 
        if (collision.gameObject.CompareTag("Attack"))
-        {
+       {
            HealthManager.health -= 5f;
-            //levelManager.RespawnPlayer();
-            // SceneManager.LoadScene("DeathMenu");
        }
-        if (HealthManager.health < 1)
-        {
-            Application.LoadLevel(5);
-        }
+       if (HealthManager.health < 1)
+       {
+           SceneManager.LoadScene(5);
+       }
 
-        if (collision.gameObject.CompareTag("Shark"))
-        {
-            Application.LoadLevel(5);
-        }
+       if (collision.gameObject.CompareTag("Shark"))
+       {
+            SceneManager.LoadScene(5);
+       }
 
     }
 }

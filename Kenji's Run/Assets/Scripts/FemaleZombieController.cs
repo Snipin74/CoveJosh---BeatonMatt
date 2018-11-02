@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaleZombieController : MonoBehaviour {
+public class FemaleZombieController : MonoBehaviour {
 
     public float moveSpeed;
     public bool moveRight;
@@ -16,52 +16,24 @@ public class MaleZombieController : MonoBehaviour {
     public Transform EdgeCheck;
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
+    private GameObject myZombie;
 
-    public static bool IsAttacking = false;
+    public bool IsAttacking = false;
     public GameObject ninjaStar;
-    public SpriteRenderer sr;
-
-    // Player Chasing AI
-
-    private Transform myPlayer;
-    public float stopDistance;
-
-
+    
     // Use this for initialization
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        myPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        myZombie = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, myPlayer.position) < stopDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, myPlayer.position, moveSpeed * Time.deltaTime);
-            myAnimator.SetFloat("Speed", moveSpeed);
-
-
-            sr.flipX = (myPlayer.transform.position.x < transform.position.x) ? true : false;
-            //if (myPlayer.transform.position.x < transform.position.x)
-            //{
-            //    sr.flipX = true;
-            //} else
-            //{
-            //    sr.flipX = false;
-
-            //}
-        }
-        else
-        {
-            myAnimator.SetFloat("Speed", 0.0f);
-        }
-
-
-       /* hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
+        hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
         notAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, wallCheckRadius, whatIsWall);
 
         if (hittingWall || !notAtEdge)
@@ -79,7 +51,7 @@ public class MaleZombieController : MonoBehaviour {
         {
             transform.localScale = new Vector3(0.64f, 0.5f, transform.localScale.z);
             myRidgidBody.velocity = new Vector2(-moveSpeed, myRidgidBody.velocity.y);
-        }*/
+        }
 
         if (IsAttacking)
         {
@@ -93,14 +65,25 @@ public class MaleZombieController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player"))
+        {
+            IsAttacking = true;
+        }
+
         if (collision.tag == "Sword")
         {
             Destroy(gameObject);
         }
 
-        if( collision.tag == "Ninja Star")
+        if (collision.tag == "Ninja Star")
         {
             Destroy(gameObject);
-        } 
-    } 
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        IsAttacking = false;
+    }
+
 }

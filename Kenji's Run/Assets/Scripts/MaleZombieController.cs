@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FemaleZombieController : MonoBehaviour {
+public class MaleZombieController : MonoBehaviour {
 
     public float moveSpeed;
     public bool moveRight;
@@ -16,41 +16,47 @@ public class FemaleZombieController : MonoBehaviour {
     public Transform EdgeCheck;
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
+    private GameObject myZombie;
 
-    public static bool IsAttacking = false;
+    public bool IsAttacking = false;
     public GameObject ninjaStar;
+    public SpriteRenderer sr;
+
+    // Player Chasing AI
+
+    private Transform myPlayer;
+    public float stopDistance;
+
 
     // Use this for initialization
     void Start()
     {
-
+        sr = GetComponent<SpriteRenderer>();
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-
+        myPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
-        notAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, wallCheckRadius, whatIsWall);
-
-        if (hittingWall || !notAtEdge)
+        if (Vector3.Distance(transform.position, myPlayer.position) < stopDistance)
         {
-            moveRight = !moveRight;
-        }
+            transform.position = Vector2.MoveTowards(transform.position, myPlayer.position, moveSpeed * Time.deltaTime);
+            myAnimator.SetFloat("Speed", moveSpeed);
 
-        if (moveRight)
-        {
-            transform.localScale = new Vector3(-0.64f, 0.5f, transform.localScale.z);
-            myRidgidBody.velocity = new Vector2(moveSpeed, myRidgidBody.velocity.y);
-
+            if (myPlayer.transform.position.x < transform.position.x)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
         else
         {
-            transform.localScale = new Vector3(0.64f, 0.5f, transform.localScale.z);
-            myRidgidBody.velocity = new Vector2(-moveSpeed, myRidgidBody.velocity.y);
+            myAnimator.SetFloat("Speed", 0.0f);
         }
 
         if (IsAttacking)
@@ -65,14 +71,25 @@ public class FemaleZombieController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player"))
+        {
+            IsAttacking = true;
+        }
+
         if (collision.tag == "Sword")
         {
             Destroy(gameObject);
         }
 
-        if (collision.tag == "Ninja Star")
+        if( collision.tag == "Ninja Star")
         {
             Destroy(gameObject);
-        }
+        } 
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        IsAttacking = false;
+    }
+
 }

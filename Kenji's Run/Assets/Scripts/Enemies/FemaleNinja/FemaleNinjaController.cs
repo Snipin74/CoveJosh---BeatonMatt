@@ -16,18 +16,20 @@ public class FemaleNinjaController : MonoBehaviour {
     public Transform EdgeCheck;
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
+    private GameObject myBoss;
 
     public bool IsAttacking = false;
     public GameObject ninjaStar;
 
-    BossHealthManager BHM;
+    BossHealthManager healthManager;
 
     // Use this for initialization
     void Start()
     {
-        BHM = gameObject.GetComponent<BossHealthManager>();
+        healthManager = gameObject.GetComponent<BossHealthManager>();
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myBoss = GetComponent<GameObject>();
 
     }
 
@@ -67,19 +69,26 @@ public class FemaleNinjaController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-    //    if (collision.tag == "Sword")
-    //    {
-    //       Destroy(gameObject);
-    //   }
-
-      if (collision.tag == "Ninja Star")
+        if (collision.tag == "Sword")
         {
-            if (BHM)
-                BHM.applyDamage(1);
+            IsAttacking = true;
+            if (healthManager)
+                healthManager.applyDamage(1);
+        }
 
-            //Destroy(gameObject);
-       }
+        if (collision.tag == "Ninja Star")
+        {
+            if (healthManager)
+                healthManager.applyDamage(1);
+
+            Destroy(gameObject);
+        }
      
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        IsAttacking = false;
     }
 }
 

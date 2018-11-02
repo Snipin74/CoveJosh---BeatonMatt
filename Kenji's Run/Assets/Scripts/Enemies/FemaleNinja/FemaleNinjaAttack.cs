@@ -11,7 +11,7 @@ public class FemaleNinjaAttack : MonoBehaviour
         FNC = gameObject.GetComponentInParent<FemaleNinjaController>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
@@ -27,5 +27,5 @@ public class FemaleNinjaAttack : MonoBehaviour
             if(FNC)
                 FNC.IsAttacking = false;
         }
-    }
+    }*/
 }

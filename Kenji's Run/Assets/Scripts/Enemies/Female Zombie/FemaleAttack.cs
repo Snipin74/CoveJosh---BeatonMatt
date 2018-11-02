@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class FemaleAttack : MonoBehaviour {
 
+    public FemaleZombieController theFemale;
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            FemaleZombieController.IsAttacking = true;
+            //myZombie.GetComponent<FemaleZombieController>().IsAttacking = true;
         }
     }
 
@@ -16,13 +19,14 @@ public class FemaleAttack : MonoBehaviour {
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            FemaleZombieController.IsAttacking = false;
+            //myZombie.GetComponent<FemaleZombieController>().IsAttacking = false;
         }
     }
 
     // Use this for initialization
     void Start()
     {
+        theFemale = FindObjectOfType<FemaleZombieController>();
 
     }
 

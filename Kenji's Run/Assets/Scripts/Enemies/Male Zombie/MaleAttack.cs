@@ -8,7 +8,7 @@ public class MaleAttack : MonoBehaviour {
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            MaleZombieController.IsAttacking = true;
+         //   MaleZombieController.IsAttacking = true;
         }
     }
 
@@ -16,7 +16,7 @@ public class MaleAttack : MonoBehaviour {
     {
         if (collision.gameObject.name.Equals("Player"))
         {
-            MaleZombieController.IsAttacking = false;
+         //   MaleZombieController.IsAttacking = false;
         }
     }
 

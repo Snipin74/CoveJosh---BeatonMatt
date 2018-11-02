@@ -87,7 +87,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4561671286022826}
   - component: {fileID: 58856571137051512}
-  - component: {fileID: 114307640481793000}
   m_Layer: 11
   m_Name: AttackCheck
   m_TagString: Untagged
@@ -115,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1211107588904194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.309311, y: 9.96, z: 0.828125}
+  m_LocalPosition: {x: 105.32339, y: -2.7469597, z: 0.828125}
   m_LocalScale: {x: 0.64000005, y: 0.5, z: 0}
   m_Children:
   - {fileID: 4501643335475108}
@@ -282,17 +281,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114307640481793000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600090012753432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5668c1351b27344b4d30cb83473368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114786406529228638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,6 +300,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   EdgeCheck: {fileID: 4487411481661742}
+  IsAttacking: 0
   ninjaStar: {fileID: 0}
 --- !u!212 &212569659155969220
 SpriteRenderer:

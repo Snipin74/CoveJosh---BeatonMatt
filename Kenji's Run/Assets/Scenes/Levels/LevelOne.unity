@@ -177,7 +177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4447617704418342, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.55
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4447617704418342, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7006,6 +7006,10 @@ Prefab:
         type: 2}
       propertyPath: m_Volume
       value: 0.023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499205275961720, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
+      propertyPath: m_Name
+      value: Pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75056c3324a70c9478e4406015e9d153, type: 2}

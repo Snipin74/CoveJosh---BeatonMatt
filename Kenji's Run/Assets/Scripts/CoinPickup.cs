@@ -18,7 +18,7 @@ public class CoinPickup : MonoBehaviour {
     {
 
         scoreHandler = FindObjectOfType<ScoreManager>();
-        coinSound = GameObject.Find("Coin").GetComponent<AudioSource>();
+        coinSound = GameObject.Find("Pickup").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

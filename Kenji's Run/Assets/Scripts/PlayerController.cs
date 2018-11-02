@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        
         FacingRight = true; // Settting bool to true since player starts in game facing right
 
         // Getting Components
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour {
         myCollider = GetComponent<Collider2D>();
         myAnimator = GetComponent<Animator>();
         myTransform = GetComponent<Transform>();
+        
 
     }
 
@@ -81,7 +82,7 @@ public class PlayerController : MonoBehaviour {
             if (grounded)
             {
                 myRidgidBody.velocity = new Vector2(myRidgidBody.velocity.x, jumpForce);
-
+                
                
             }
             if (JumpSound.isPlaying)

@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour {
     public GameObject NinjaStar;
     public AudioSource JumpSound;
 
+    public ObjectPooler theObjectPool;
+
     // Use this for initialization
     void Start () {
         
@@ -43,12 +45,16 @@ public class PlayerController : MonoBehaviour {
 
         float horizontal = Input.GetAxis("Horizontal"); // Calling Movement Controls
 
+       
         GetInput();
 
         
         HandleMovement(horizontal); // Player Movement 
         Flip(horizontal); // Flip Character Left and Right
         ResetValues(); // Reset Values after Use
+
+       
+      
     }
 
     private void HandleMovement(float horizontal) // Players Movement on the X Axis and with pre set controls are Left & Right Arrows and A & D
@@ -108,8 +114,11 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            Instantiate(NinjaStar, firepoint.position, firepoint.rotation);
-            
+           //Instantiate(NinjaStar, firepoint.position, firepoint.rotation);
+            GameObject newStar = theObjectPool.GetPooledObject();
+            newStar.transform.position = firepoint.position;
+            newStar.transform.rotation = firepoint.rotation;
+            newStar.SetActive(true);
         }
 
             // Animator Setting

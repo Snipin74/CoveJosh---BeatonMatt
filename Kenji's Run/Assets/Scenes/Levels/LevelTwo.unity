@@ -425,48 +425,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &435911750
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 435911751}
-  - component: {fileID: 435911752}
-  m_Layer: 8
-  m_Name: StarPool (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &435911751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435911750}
-  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1616544090}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &435911752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435911750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
-  pooledAmt: 5
 --- !u!1001 &454656701
 Prefab:
   m_ObjectHideFlags: 0
@@ -735,6 +693,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19326c52622f663459d8834ee1c8a0f4, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &791376375 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114036215471427180, guid: db19af3e99ad63e49b86be9e5e3f4dde,
+    type: 2}
+  m_PrefabInternal: {fileID: 1571332274}
+  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
 --- !u!1001 &824347751
 Prefab:
   m_ObjectHideFlags: 0
@@ -1706,48 +1670,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20e126870905654d8a174a65601b417, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1330350010
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1330350011}
-  - component: {fileID: 1330350012}
-  m_Layer: 8
-  m_Name: StarPool (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1330350011
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1330350010}
-  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1616544090}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1330350012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1330350010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
-  pooledAmt: 5
 --- !u!1 &1348861157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1274993828804924, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
@@ -2152,6 +2074,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac7aca578d26939489aa39380453112e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1571332274
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210690281488062, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1581526368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1117141764929100, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
@@ -2168,50 +2132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d73e9a5e41eb44589fea94b9b518f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1616544088
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616544090}
-  - component: {fileID: 1616544089}
-  m_Layer: 8
-  m_Name: StarPooler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1616544089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1616544088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
-  pooledAmt: 5
---- !u!4 &1616544090
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1616544088}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.288, y: 1.583, z: 0}
-  m_LocalScale: {x: 3.4361982, y: 7.4133573, z: -10}
-  m_Children:
-  - {fileID: 435911751}
-  - {fileID: 1330350011}
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1633083708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955879335469358, guid: ac7aca578d26939489aa39380453112e,
@@ -2321,6 +2241,11 @@ Prefab:
       propertyPath: damageToGive
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+        type: 2}
+      propertyPath: theObjectPool
+      value: 
+      objectReference: {fileID: 791376375}
     m_RemovedComponents:
     - {fileID: 61210565256658126, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}

@@ -23,6 +23,9 @@ public class FemaleNinjaController : MonoBehaviour {
 
     BossHealthManager healthManager;
 
+
+    public ObjectPooler theObjectPool;
+
     // Use this for initialization
     void Start()
     {

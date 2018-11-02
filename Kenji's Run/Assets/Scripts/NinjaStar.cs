@@ -11,6 +11,8 @@ public class NinjaStar : MonoBehaviour {
 
     private Rigidbody2D starRidgidBody; // Player's RidgidBody
 
+   
+
     // Use this for initialization
     void Start () {
 
@@ -36,6 +38,7 @@ public class NinjaStar : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

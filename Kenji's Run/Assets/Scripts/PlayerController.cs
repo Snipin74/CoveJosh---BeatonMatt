@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour {
     public static bool isAttacking;
     public Transform firepoint;
     public GameObject NinjaStar;
+    public GameManager theGameManager;
     public AudioSource JumpSound;
-
     public ObjectPooler theObjectPool;
 
     // Use this for initialization
@@ -148,6 +148,7 @@ public class PlayerController : MonoBehaviour {
 
        if (collision.gameObject.CompareTag("Shark"))
        {
+            theGameManager.RestartGame();
             //SceneManager.LoadScene(5);
        }
 

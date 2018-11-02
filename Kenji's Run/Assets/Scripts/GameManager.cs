@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour {
 
     public GameOverMenu theGameOverScreen;
 
-    public bool powerupReset;
-
     // Use this for initialization
     void Start()
     {
@@ -61,6 +59,6 @@ public class GameManager : MonoBehaviour {
         theScoreHandler.scoreIncrease = true;
         Time.timeScale = 1;
 
-        powerupReset = true;
+       
     }
 }

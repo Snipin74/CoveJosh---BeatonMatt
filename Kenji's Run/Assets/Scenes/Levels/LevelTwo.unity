@@ -425,6 +425,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &435911750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435911751}
+  - component: {fileID: 435911752}
+  m_Layer: 8
+  m_Name: StarPool (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435911751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435911750}
+  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1616544090}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435911752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435911750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
+  pooledAmt: 5
 --- !u!1001 &454656701
 Prefab:
   m_ObjectHideFlags: 0
@@ -1023,48 +1065,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &968037824
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 57.964542
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.74593294
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4842359669432290, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_RootOrder
-      value: 26
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!4 &988819337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955879335469358, guid: ac7aca578d26939489aa39380453112e,
@@ -1706,6 +1706,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20e126870905654d8a174a65601b417, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1330350010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330350011}
+  - component: {fileID: 1330350012}
+  m_Layer: 8
+  m_Name: StarPool (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1330350011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1330350010}
+  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1616544090}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1330350012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1330350010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
+  pooledAmt: 5
 --- !u!1 &1348861157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1274993828804924, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
@@ -1813,7 +1855,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.915495
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2126,6 +2168,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d73e9a5e41eb44589fea94b9b518f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1616544088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616544090}
+  - component: {fileID: 1616544089}
+  m_Layer: 8
+  m_Name: StarPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1616544089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616544088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3579e5f799588a54ba738b4de1d1bd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObj: {fileID: 1333634218342390, guid: 4ac10026920fcf948b491d58ef021b5c, type: 2}
+  pooledAmt: 5
+--- !u!4 &1616544090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616544088}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.288, y: 1.583, z: 0}
+  m_LocalScale: {x: 3.4361982, y: 7.4133573, z: -10}
+  m_Children:
+  - {fileID: 435911751}
+  - {fileID: 1330350011}
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1633083708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955879335469358, guid: ac7aca578d26939489aa39380453112e,
@@ -2415,8 +2501,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905637273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.093, y: 1.862, z: 10}
-  m_LocalScale: {x: 2.8204923, y: 6.780985, z: -10}
+  m_LocalPosition: {x: -0.288, y: 1.583, z: 10}
+  m_LocalScale: {x: 3.4361982, y: 7.4133573, z: -10}
   m_Children:
   - {fileID: 2081239521}
   - {fileID: 397474752}

@@ -76,7 +76,7 @@ public class FemaleZombieController : MonoBehaviour {
 
         if (collision.tag == "Ninja Star")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 

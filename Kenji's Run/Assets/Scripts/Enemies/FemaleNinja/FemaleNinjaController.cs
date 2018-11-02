@@ -85,10 +85,5 @@ public class FemaleNinjaController : MonoBehaviour {
         }
      
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        IsAttacking = false;
-    }
 }
 

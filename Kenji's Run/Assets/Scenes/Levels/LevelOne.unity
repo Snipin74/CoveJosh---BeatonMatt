@@ -177,7 +177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4447617704418342, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.8
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4447617704418342, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -208,6 +208,11 @@ Prefab:
       propertyPath: JumpSound
       value: 
       objectReference: {fileID: 2099511026}
+    - target: {fileID: 114986033774909104, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+        type: 2}
+      propertyPath: grounded
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
   m_IsPrefabAsset: 0
@@ -7004,13 +7009,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 82410089416938066, guid: 75056c3324a70c9478e4406015e9d153,
         type: 2}
-      propertyPath: m_Volume
-      value: 0.023
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499205275961720, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
-      propertyPath: m_Name
-      value: Pickup
-      objectReference: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ff2c5e5916e044c439de194dba77ffed, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75056c3324a70c9478e4406015e9d153, type: 2}
   m_IsPrefabAsset: 0

@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 4404556114454574}
   - component: {fileID: 82897447220924130}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ff2c5e5916e044c439de194dba77ffed, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.146
+  m_Volume: 0.023
   m_Pitch: 1
   Loop: 0
   Mute: 0

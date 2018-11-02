@@ -82,8 +82,8 @@ public class PlayerController : MonoBehaviour {
             if (grounded)
             {
                 myRidgidBody.velocity = new Vector2(myRidgidBody.velocity.x, jumpForce);
-                
-               
+                JumpSound.Play();
+
             }
             if (JumpSound.isPlaying)
             {

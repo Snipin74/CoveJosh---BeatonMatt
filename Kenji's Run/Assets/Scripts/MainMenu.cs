@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour {
     public void playGame()
     {
         Application.LoadLevel(playGameLevel);
+        Time.timeScale = 1f;
     }
 
     public void quitGame()

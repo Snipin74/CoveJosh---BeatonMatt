@@ -54,3 +54,4 @@ MonoBehaviour:
   thePlayer: {fileID: 0}
   theGameOverScreen: {fileID: 0}
   thePauseScreen: {fileID: 0}
+  theWin: {fileID: 0}

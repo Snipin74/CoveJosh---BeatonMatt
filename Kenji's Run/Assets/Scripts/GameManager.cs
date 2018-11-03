@@ -48,8 +48,8 @@ public class GameManager : MonoBehaviour {
     public void Reset()
     {
         theGameOverScreen.gameObject.SetActive(false);
-       
 
+        Application.LoadLevel(Application.loadedLevel);
         thePlayer.transform.position = playerStartPoint;
        
         thePlayer.gameObject.SetActive(true);

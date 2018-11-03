@@ -143,8 +143,9 @@ public class PlayerController : MonoBehaviour {
        }
        if (HealthManager.health < 1)
        {
-          // SceneManager.LoadScene(5);
-       }
+            theGameManager.RestartGame();
+            // SceneManager.LoadScene(5);
+        }
 
        if (collision.gameObject.CompareTag("Shark"))
        {

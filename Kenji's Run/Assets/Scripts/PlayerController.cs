@@ -112,6 +112,12 @@ public class PlayerController : MonoBehaviour {
             
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            theGameManager.PauseGame();
+
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
            //Instantiate(NinjaStar, firepoint.position, firepoint.rotation);
@@ -143,13 +149,13 @@ public class PlayerController : MonoBehaviour {
        }
        if (HealthManager.health < 1)
        {
-            theGameManager.RestartGame();
+            theGameManager.GameOver();
             // SceneManager.LoadScene(5);
         }
 
        if (collision.gameObject.CompareTag("Shark"))
        {
-            theGameManager.RestartGame();
+            theGameManager.GameOver();
             //SceneManager.LoadScene(5);
        }
 

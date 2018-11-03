@@ -425,6 +425,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &404772584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114539852190968660, guid: ab69b15f02a60e14a92e2cd52c706f30,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244233554}
+  m_Script: {fileID: 11500000, guid: f22eeab09c5f66e4f8b1e10a46e4ecb5, type: 3}
 --- !u!1001 &454656701
 Prefab:
   m_ObjectHideFlags: 0
@@ -701,6 +707,11 @@ Prefab:
       propertyPath: theGameOverScreen
       value: 
       objectReference: {fileID: 467272012}
+    - target: {fileID: 114632186819494362, guid: cbf63b6b4fdde02499cae12a048cf132,
+        type: 2}
+      propertyPath: thePauseScreen
+      value: 
+      objectReference: {fileID: 404772584}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf63b6b4fdde02499cae12a048cf132, type: 2}
   m_IsPrefabAsset: 0

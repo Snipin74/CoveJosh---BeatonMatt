@@ -5931,6 +5931,11 @@ Prefab:
       propertyPath: theGameOverScreen
       value: 
       objectReference: {fileID: 651790036}
+    - target: {fileID: 114632186819494362, guid: cbf63b6b4fdde02499cae12a048cf132,
+        type: 2}
+      propertyPath: thePauseScreen
+      value: 
+      objectReference: {fileID: 902441522}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf63b6b4fdde02499cae12a048cf132, type: 2}
   m_IsPrefabAsset: 0
@@ -6518,7 +6523,7 @@ Prefab:
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114378659756248386, guid: ab69b15f02a60e14a92e2cd52c706f30,
     type: 2}
-  m_PrefabInternal: {fileID: 1265816105}
+  m_PrefabInternal: {fileID: 1283349225}
   m_Script: {fileID: 11500000, guid: 27c70352d66f31d4aad3797ef9b0cd4e, type: 3}
 --- !u!1001 &668506177
 Prefab:
@@ -6946,6 +6951,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c73f0c6611a8724f9e71dd4c8181a3d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &902441522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114539852190968660, guid: ab69b15f02a60e14a92e2cd52c706f30,
+    type: 2}
+  m_PrefabInternal: {fileID: 1283349225}
+  m_Script: {fileID: 11500000, guid: f22eeab09c5f66e4f8b1e10a46e4ecb5, type: 3}
 --- !u!1001 &904214130
 Prefab:
   m_ObjectHideFlags: 0
@@ -12274,7 +12285,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4519683788077662, guid: 0379345a7006015429883800972b2211,
     type: 2}
   m_PrefabInternal: {fileID: 1102305785}
---- !u!1001 &1265816105
+--- !u!1001 &1283349225
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2

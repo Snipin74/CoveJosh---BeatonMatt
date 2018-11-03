@@ -9,13 +9,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenu;
     public AudioSource background;
 
-    public void PauseGame()
-    {
-        Time.timeScale = 0f;
-        AudioListener.pause = true;
-        pauseMenu.SetActive(true);
-        AudioListener.pause = true;
-    }
+ 
 
     public void ResumeGame()
     {
@@ -23,6 +17,16 @@ public class PauseMenu : MonoBehaviour {
         AudioListener.pause = false;
         pauseMenu.SetActive(false);
         AudioListener.pause = false;
+    }
+
+    public void RestartGame()
+    {
+        FindObjectOfType<GameManager>().Reset();
+        //  AudioListener.pause = false;
+        //death.Stop();
+        //background.Play();
+
+
     }
 
     public void MainMenu()

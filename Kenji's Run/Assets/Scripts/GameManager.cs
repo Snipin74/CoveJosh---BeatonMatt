@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
     private ScoreManager theScoreHandler;
 
     public GameOverMenu theGameOverScreen;
+    public PauseMenu thePauseScreen;
 
     // Use this for initialization
     void Start()
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour {
 
     }
 
-    public void RestartGame()
+    public void GameOver()
     {
         theScoreHandler.scoreIncrease = false;
         thePlayer.gameObject.SetActive(false);
@@ -60,5 +61,13 @@ public class GameManager : MonoBehaviour {
         Time.timeScale = 1;
 
        
+    }
+
+    public void PauseGame()
+    {
+        thePauseScreen.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
+        AudioListener.pause = true;
     }
 }

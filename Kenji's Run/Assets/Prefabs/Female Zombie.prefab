@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 61848063446213576}
   - component: {fileID: 95828312890195532}
   - component: {fileID: 114786406529228638}
+  - component: {fileID: 114572208933337106}
   m_Layer: 11
   m_Name: Female Zombie
   m_TagString: Enemy
@@ -114,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1211107588904194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105.32339, y: -2.7469597, z: 0.828125}
+  m_LocalPosition: {x: 13.309311, y: 9.96, z: 0.828125}
   m_LocalScale: {x: 0.64000005, y: 0.5, z: 0}
   m_Children:
   - {fileID: 4501643335475108}
@@ -281,6 +282,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114572208933337106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211107588904194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e06de22c2ae2f94aae4a4a42db324f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  MaxHealth: 10
 --- !u!114 &114786406529228638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +314,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   EdgeCheck: {fileID: 4487411481661742}
+  healthManager: {fileID: 0}
   IsAttacking: 0
   ninjaStar: {fileID: 0}
 --- !u!212 &212569659155969220

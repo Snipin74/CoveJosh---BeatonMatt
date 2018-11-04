@@ -74,7 +74,7 @@ public class FemaleNinjaController : MonoBehaviour {
     {
         if (collision.tag == "Sword")
         {
-            IsAttacking = true;
+            //IsAttacking = true;
             if (healthManager)
                 healthManager.applyDamage(1);
         }

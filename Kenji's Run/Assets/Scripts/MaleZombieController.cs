@@ -11,7 +11,9 @@ public class MaleZombieController : MonoBehaviour {
     private Animator myAnimator;
     private Transform myPlayer;
     private SpriteRenderer spriteRenderer;
-   
+    public EnemyHealth healthManager;
+
+
 
     // public Transform wallCheck;
     // public float wallCheckRadius;
@@ -28,6 +30,7 @@ public class MaleZombieController : MonoBehaviour {
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        healthManager = gameObject.GetComponent<EnemyHealth>();
 
         IsAttacking = false;
     }
@@ -73,13 +76,16 @@ public class MaleZombieController : MonoBehaviour {
 
         if (collision.tag == "Sword")
         {
-            Destroy(gameObject);
+           //IsAttacking = true;
+            if (healthManager)
+                healthManager.applyDamage(1);
         }
 
-        if( collision.tag == "Ninja Star")
-        {
-            Destroy(gameObject);
-        } 
+       if (collision.tag == "Ninja Star")
+       {
+          if (healthManager)
+             healthManager.applyDamage(1);
+       }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

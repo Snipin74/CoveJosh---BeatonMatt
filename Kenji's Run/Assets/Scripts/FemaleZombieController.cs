@@ -16,8 +16,7 @@ public class FemaleZombieController : MonoBehaviour {
     public Transform EdgeCheck;
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
-    private GameObject myZombie;
-    private GameManager gameManager;
+    public EnemyHealth healthManager;
 
     public bool IsAttacking = false;
     public GameObject ninjaStar;
@@ -28,7 +27,7 @@ public class FemaleZombieController : MonoBehaviour {
         
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        myZombie = GetComponent<GameObject>();
+        healthManager = gameObject.GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
@@ -73,12 +72,15 @@ public class FemaleZombieController : MonoBehaviour {
 
         if (collision.tag == "Sword")
         {
-            Destroy(gameObject);
+            //IsAttacking = true;
+            if (healthManager)
+                healthManager.applyDamage(1);
         }
 
         if (collision.tag == "Ninja Star")
         {
-            //Destroy(gameObject);
+            if (healthManager)
+                healthManager.applyDamage(1);
         }
     }
 

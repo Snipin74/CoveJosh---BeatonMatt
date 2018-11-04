@@ -35,7 +35,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4183696359201178}
   - component: {fileID: 58418542821820968}
-  - component: {fileID: 114382119628405542}
   m_Layer: 11
   m_Name: AttackCheck
   m_TagString: Untagged
@@ -57,6 +56,7 @@ GameObject:
   - component: {fileID: 61986267922778960}
   - component: {fileID: 95228010917386134}
   - component: {fileID: 114194107109232174}
+  - component: {fileID: 114133172089032708}
   m_Layer: 11
   m_Name: Male Zombie
   m_TagString: Enemy
@@ -115,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964222758692326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.76, y: 2.15, z: 0}
+  m_LocalPosition: {x: -1.33, y: 1.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 4710134439662694}
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!58 &58244869656885662
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -251,7 +251,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.287174, y: 2.2530608}
+  m_Offset: {x: 0.49477398, y: 2.2530608}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -262,7 +262,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7918847, y: 4.287715}
+  m_Size: {x: 1.3766847, y: 4.287715}
   m_EdgeRadius: 0
 --- !u!95 &95228010917386134
 Animator:
@@ -282,6 +282,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114133172089032708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821778751967364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e06de22c2ae2f94aae4a4a42db324f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  MaxHealth: 10
 --- !u!114 &114194107109232174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -294,27 +307,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
-  moveRight: 0
-  wallCheck: {fileID: 4960647869881568}
-  wallCheckRadius: 0.1
-  whatIsWall:
-    serializedVersion: 2
-    m_Bits: 1024
-  EdgeCheck: {fileID: 4880659228566026}
-  ninjaStar: {fileID: 0}
-  sr: {fileID: 0}
+  IsAttacking: 0
   stopDistance: 6
---- !u!114 &114382119628405542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1700689621982112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1dee4f747af8a64aa5a2b6e64ea5a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  healthManager: {fileID: 0}
 --- !u!212 &212460436740136186
 SpriteRenderer:
   m_ObjectHideFlags: 1

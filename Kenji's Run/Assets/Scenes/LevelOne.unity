@@ -308,14 +308,14 @@ Prefab:
       objectReference: {fileID: 1782604170}
     - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
         type: 2}
-      propertyPath: theObjectPool
-      value: 
-      objectReference: {fileID: 20556880}
-    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-        type: 2}
       propertyPath: theHealthHandler
       value: 
       objectReference: {fileID: 1637616377}
+    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+        type: 2}
+      propertyPath: theObjectPool
+      value: 
+      objectReference: {fileID: 20556880}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
   m_IsPrefabAsset: 0
@@ -400,16 +400,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-        type: 2}
-      propertyPath: theGameManager
-      value: 
-      objectReference: {fileID: 1782604170}
-    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-        type: 2}
-      propertyPath: theHealthHandler
-      value: 
-      objectReference: {fileID: 1637616377}
     - target: {fileID: 114924523824428058, guid: 3f7fa313235509c42909f5d9c41c5d5d,
         type: 2}
       propertyPath: target
@@ -420,6 +410,16 @@ Prefab:
       propertyPath: target1
       value: 
       objectReference: {fileID: 192995621}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 1782604170}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theHealthHandler
+      value: 
+      objectReference: {fileID: 1637616377}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
   m_IsPrefabAsset: 0
@@ -12889,16 +12889,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-        type: 2}
-      propertyPath: theGameManager
-      value: 
-      objectReference: {fileID: 1782604170}
-    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-        type: 2}
-      propertyPath: theHealthHandler
-      value: 
-      objectReference: {fileID: 1637616377}
     - target: {fileID: 114924523824428058, guid: 3f7fa313235509c42909f5d9c41c5d5d,
         type: 2}
       propertyPath: target
@@ -12909,6 +12899,26 @@ Prefab:
       propertyPath: target1
       value: 
       objectReference: {fileID: 1792822935}
+    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 1782604170}
+    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theHealthHandler
+      value: 
+      objectReference: {fileID: 1637616377}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 1782604170}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theHealthHandler
+      value: 
+      objectReference: {fileID: 1637616377}
     - target: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
       propertyPath: m_Name
       value: night-wave-01 (2)

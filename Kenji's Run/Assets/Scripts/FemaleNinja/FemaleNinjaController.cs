@@ -76,7 +76,7 @@ public class FemaleNinjaController : MonoBehaviour {
         {
             //IsAttacking = true;
             if (healthManager)
-                healthManager.applyDamage(1);
+                healthManager.applyDamage(5);
         }
 
         if (collision.tag == "Ninja Star")

@@ -5,15 +5,13 @@ using UnityEngine;
 public class MaleZombieController : MonoBehaviour {
 
     public float moveSpeed;
-    public bool moveRight;
+    public bool IsAttacking;
+    public float stopDistance;
     private Rigidbody2D myRidgidBody; 
     private Animator myAnimator;
-    private GameObject myZombie;
     private Transform myPlayer;
     private SpriteRenderer spriteRenderer;
-    private GameManager gameManager;
-    public bool IsAttacking = false;
-    public float stopDistance;
+   
 
     // public Transform wallCheck;
     // public float wallCheckRadius;
@@ -30,7 +28,8 @@ public class MaleZombieController : MonoBehaviour {
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        gameManager = FindObjectOfType<GameManager>();
+
+        IsAttacking = false;
     }
 
     // Update is called once per frame
@@ -70,7 +69,6 @@ public class MaleZombieController : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             IsAttacking = true;
-          //  gameManager.Respawn();
         }
 
         if (collision.tag == "Sword")

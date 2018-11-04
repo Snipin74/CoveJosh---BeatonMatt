@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     private PlayerController thePlayer;
     private Vector3 playerStartPoint;
     private ScoreManager theScoreHandler;
+    private HealthManager theHealthHandler;
     public GameOverMenu theGameOverScreen;
     public PauseMenu thePauseScreen;
     public GameWinMenu theWin;
@@ -18,10 +19,9 @@ public class GameManager : MonoBehaviour {
     {
         thePlayer = FindObjectOfType<PlayerController>();
         theScoreHandler = FindObjectOfType<ScoreManager>();
-
+        theHealthHandler = FindObjectOfType<HealthManager>();
 
         playerStartPoint = thePlayer.transform.position;
-
     }
 
     public void GameOver()
@@ -31,23 +31,20 @@ public class GameManager : MonoBehaviour {
 
         theGameOverScreen.gameObject.SetActive(true);
         Time.timeScale = 0;
-
     }
 
     public void Reset()
     {
         theGameOverScreen.gameObject.SetActive(false);
-
         Application.LoadLevel(Application.loadedLevel);
-        thePlayer.transform.position = playerStartPoint;
-       
-        thePlayer.gameObject.SetActive(true);
-
-
-        theScoreHandler.scoreCount = 0;
-        theScoreHandler.scoreIncrease = true;
         Time.timeScale = 1;
-       
+
+        /* The blocked out here will be used in the future to make the level reset
+         * properly.
+         * thePlayer.transform.position = playerStartPoint;
+         * thePlayer.gameObject.SetActive(true);
+         * theScoreHandler.scoreCount = 0;
+         * theScoreHandler.scoreIncrease = true;*/
     }
 
     public void PauseGame()
@@ -68,7 +65,7 @@ public class GameManager : MonoBehaviour {
     public void Respawn()
     {
         Debug.Log("You are back!!!");
-        thePlayer.transform.position = currentCheckpoint.transform.position;
+        thePlayer.transform.position = currentCheckpoint.transform.position;       
     }
 
 }

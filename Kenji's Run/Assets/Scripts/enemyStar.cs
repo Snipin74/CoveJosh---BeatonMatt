@@ -6,20 +6,19 @@ public class enemyStar : MonoBehaviour {
 
     public float speed;
     public float rotationSpeed;
-    public int DamageAmount;
-
-    public GameObject HitEffect;
-
-    public PlayerController kenji;
+    public PlayerController thePlayer;
     private Rigidbody2D myRigidbody2D;
+    private GameManager theGameManager;
+    private HealthManager theHealthHandler;
 
-	// Use this for initialization
-	void Start () {
-        kenji = FindObjectOfType<PlayerController>();
-
+    // Use this for initialization
+    void Start () {
+        thePlayer = FindObjectOfType<PlayerController>();
+        theGameManager = FindObjectOfType<GameManager>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
+        theHealthHandler = FindObjectOfType<HealthManager>();
 
-        if(kenji.transform.position.x < transform.position.x)
+        if (thePlayer.transform.position.x < transform.position.x)
         {
             speed = -speed;
             rotationSpeed = -rotationSpeed;
@@ -37,7 +36,8 @@ public class enemyStar : MonoBehaviour {
     {
         if(collision.name == "Player")
         {
-            HealthManager.health -= 20f;
+           theHealthHandler.health -= 1f;
+            theGameManager.Respawn();
             Destroy(gameObject);
         }
     }

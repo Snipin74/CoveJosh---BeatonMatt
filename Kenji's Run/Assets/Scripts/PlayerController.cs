@@ -9,19 +9,21 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce; // Jump height of character
     public bool grounded; // Ground check 
     private bool FacingRight; // Facing Right or not
+    public bool Attacking;
+    public bool JumpAttacking;
     public LayerMask whatIsGround; // Setting Ground Layer to check
     private Collider2D myCollider; // Player's Collider
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator; // Calling Animator on Player
     private Transform myTransform; // Tansform Component
-    public bool Attacking = false;
-    public bool JumpAttacking = false;
-    public static bool isAttacking;
     public Transform firepoint;
-    public GameObject NinjaStar;
     public GameManager theGameManager;
+    public HealthManager theHealthHandler;
     public AudioSource JumpSound;
     public ObjectPooler theObjectPool;
+
+    //public static bool isAttacking;
+
 
 
     // Use this for initialization
@@ -35,9 +37,10 @@ public class PlayerController : MonoBehaviour {
         myCollider = GetComponent<Collider2D>();
         myAnimator = GetComponent<Animator>();
         myTransform = GetComponent<Transform>();
-        
 
-    }
+        Attacking = false;
+        JumpAttacking = false;
+}
 
     // Update is called once per frame
     void Update () {
@@ -146,19 +149,17 @@ public class PlayerController : MonoBehaviour {
 
        if (collision.gameObject.CompareTag("Attack"))
        {
-          HealthManager.health -= 1f;
+          theHealthHandler.health -= 1f;
             theGameManager.Respawn();
         }
-       if (HealthManager.health < 1)
+       if (theHealthHandler.health < 1)
        {
             theGameManager.GameOver();
-            // SceneManager.LoadScene(5);
-        }
+       }
 
        if (collision.gameObject.CompareTag("Shark"))
        {
             theGameManager.GameOver();
-            //SceneManager.LoadScene(5);
        }
 
     }

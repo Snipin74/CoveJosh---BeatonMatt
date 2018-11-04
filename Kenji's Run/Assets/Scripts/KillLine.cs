@@ -4,24 +4,15 @@ using UnityEngine;
 
 public class KillLine : MonoBehaviour {
 
-    public PlayerController targetPlayer;
+    public GameManager theGameManager;
+    public HealthManager theHealthHandler;
 
-    // Use this for initialization
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        targetPlayer = GameObject.FindObjectOfType(typeof(PlayerController)) as PlayerController;
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
-    void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
-        print("Object Collided");
+        if (other.tag == "Player")
+        {
+            theHealthHandler.health -= 1f;
+            theGameManager.Respawn();
+        }
     }
 }

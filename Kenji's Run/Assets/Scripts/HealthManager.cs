@@ -8,8 +8,8 @@ public class HealthManager : MonoBehaviour {
     //player health
 
     public Text HealthText;
-    float maxHealth = 100f;
-    public static float health;
+     float maxHealth = 5f;
+    public float health;
 
 	// Use this for initialization
 	void Start () {

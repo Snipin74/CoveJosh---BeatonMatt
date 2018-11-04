@@ -6,35 +6,31 @@ public class MaleZombieController : MonoBehaviour {
 
     public float moveSpeed;
     public bool moveRight;
-
-    public Transform wallCheck;
-    public float wallCheckRadius;
-    public LayerMask whatIsWall;
-    private bool hittingWall;
-
-    private bool notAtEdge;
-    public Transform EdgeCheck;
-    private Rigidbody2D myRidgidBody; // Player's RidgidBody
+    private Rigidbody2D myRidgidBody; 
     private Animator myAnimator;
     private GameObject myZombie;
-
-    public bool IsAttacking = false;
-    public GameObject ninjaStar;
-    public SpriteRenderer sr;
-
-    // Player Chasing AI
-
     private Transform myPlayer;
+    private SpriteRenderer spriteRenderer;
+    private GameManager gameManager;
+    public bool IsAttacking = false;
     public float stopDistance;
+
+    // public Transform wallCheck;
+    // public float wallCheckRadius;
+    // public LayerMask whatIsWall;
+    // private bool hittingWall;
+    // private bool notAtEdge;
+    //public Transform EdgeCheck;
 
 
     // Use this for initialization
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         myRidgidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -47,11 +43,11 @@ public class MaleZombieController : MonoBehaviour {
 
             if (myPlayer.transform.position.x < transform.position.x)
             {
-                sr.flipX = true;
+                spriteRenderer.flipX = true;
             }
             else
             {
-                sr.flipX = false;
+                spriteRenderer.flipX = false;
             }
         }
         else
@@ -74,6 +70,7 @@ public class MaleZombieController : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             IsAttacking = true;
+          //  gameManager.Respawn();
         }
 
         if (collision.tag == "Sword")

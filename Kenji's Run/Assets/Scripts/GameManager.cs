@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public PlayerController thePlayer;
+    private PlayerController thePlayer;
     private Vector3 playerStartPoint;
     private ScoreManager theScoreHandler;
     public GameOverMenu theGameOverScreen;
     public PauseMenu thePauseScreen;
     public GameWinMenu theWin;
+    public GameObject currentCheckpoint;
+
 
     // Use this for initialization
     void Start()
     {
-        playerStartPoint = thePlayer.transform.position;
+        thePlayer = FindObjectOfType<PlayerController>();
         theScoreHandler = FindObjectOfType<ScoreManager>();
+
+
+        playerStartPoint = thePlayer.transform.position;
 
     }
 
@@ -58,6 +63,12 @@ public class GameManager : MonoBehaviour {
         theWin.gameObject.SetActive(true);
         Time.timeScale = 0;
 
+    }
+
+    public void Respawn()
+    {
+        Debug.Log("You are back!!!");
+        thePlayer.transform.position = currentCheckpoint.transform.position;
     }
 
 }

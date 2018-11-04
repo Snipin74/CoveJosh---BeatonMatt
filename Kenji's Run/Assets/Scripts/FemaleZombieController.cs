@@ -17,6 +17,7 @@ public class FemaleZombieController : MonoBehaviour {
     private Rigidbody2D myRidgidBody; // Player's RidgidBody
     private Animator myAnimator;
     private GameObject myZombie;
+    private GameManager gameManager;
 
     public bool IsAttacking = false;
     public GameObject ninjaStar;
@@ -67,6 +68,7 @@ public class FemaleZombieController : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             IsAttacking = true;
+            
         }
 
         if (collision.tag == "Sword")

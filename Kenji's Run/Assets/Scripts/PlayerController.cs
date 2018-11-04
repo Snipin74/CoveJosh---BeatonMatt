@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
     public AudioSource JumpSound;
     public ObjectPooler theObjectPool;
 
+
     // Use this for initialization
     void Start () {
         
@@ -145,8 +146,9 @@ public class PlayerController : MonoBehaviour {
 
        if (collision.gameObject.CompareTag("Attack"))
        {
-           HealthManager.health -= 5f;
-       }
+          HealthManager.health -= 1f;
+            theGameManager.Respawn();
+        }
        if (HealthManager.health < 1)
        {
             theGameManager.GameOver();

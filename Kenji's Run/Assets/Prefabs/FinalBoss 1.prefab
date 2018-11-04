@@ -145,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297155478127400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.04932, y: -3.6182075, z: 0.828125}
+  m_LocalPosition: {x: 10.27418, y: -3.8459787, z: 0.828125}
   m_LocalScale: {x: 0.64000005, y: 0.5, z: 0}
   m_Children:
   - {fileID: 4202676097372414}
@@ -348,7 +348,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   EdgeCheck: {fileID: 4799335990741718}
+  IsAttacking: 0
   ninjaStar: {fileID: 1819496678604320, guid: 3afd2d6aca06bb347919bb868ab63820, type: 2}
+  theObjectPool: {fileID: 0}
 --- !u!114 &114513263864944282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,6 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfcf20ed14b50648a257ed680be4bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentHealth: 0
   MaxHealth: 30
 --- !u!114 &114694304405495714
 MonoBehaviour:

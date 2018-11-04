@@ -34,11 +34,8 @@ public class enemyStar : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Player")
-        {
-           theHealthHandler.health -= 1f;
-            theGameManager.Respawn();
+      
             Destroy(gameObject);
-        }
+        
     }
 }

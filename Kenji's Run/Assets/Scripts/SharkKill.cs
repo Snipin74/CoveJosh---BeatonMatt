@@ -19,9 +19,9 @@ public class SharkKill : MonoBehaviour {
 
 
     }
-    void OnTriggerEnter(Collider other)
+   /* void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
         print("Object Collided");
-    }
+    }*/
 }

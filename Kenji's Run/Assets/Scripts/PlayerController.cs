@@ -151,16 +151,18 @@ public class PlayerController : MonoBehaviour {
        {
           theHealthHandler.health -= 1f;
             theGameManager.Respawn();
-        }
-       if (theHealthHandler.health < 1)
-       {
-            theGameManager.GameOver();
        }
-
+      
        if (collision.gameObject.CompareTag("Shark"))
        {
-            theGameManager.GameOver();
+            theHealthHandler.health -= 1f;
+            theGameManager.Respawn();
        }
+
+        if (theHealthHandler.health < 1)
+        {
+            theGameManager.GameOver();
+        }
 
     }
 }

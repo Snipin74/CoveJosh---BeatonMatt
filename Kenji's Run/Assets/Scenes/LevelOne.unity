@@ -400,6 +400,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 1782604170}
+    - target: {fileID: 114479482726203866, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theHealthHandler
+      value: 
+      objectReference: {fileID: 1637616377}
     - target: {fileID: 114924523824428058, guid: 3f7fa313235509c42909f5d9c41c5d5d,
         type: 2}
       propertyPath: target
@@ -410,10 +420,6 @@ Prefab:
       propertyPath: target1
       value: 
       objectReference: {fileID: 192995621}
-    - target: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_TagString
-      value: Shark
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
   m_IsPrefabAsset: 0
@@ -5350,7 +5356,8 @@ Prefab:
       propertyPath: m_Size.x
       value: 7.5051804
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114788533825297630, guid: 054963408e3fc6948a6a141b937d97da, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 054963408e3fc6948a6a141b937d97da, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &236632611 stripped
@@ -5585,36 +5592,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c73f0c6611a8724f9e71dd4c8181a3d, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &354369387 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1430355781}
---- !u!61 &354369390
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354369387}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.21931458, y: -0.8772831}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 22.59, y: 8.4}
-    newSize: {x: 22.59, y: 8.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 67.477264, y: 6.6454334}
-  m_EdgeRadius: 0
 --- !u!4 &354700420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4886061656577610, guid: 054963408e3fc6948a6a141b937d97da,
@@ -12912,10 +12889,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_Name
-      value: night-wave-01 (2)
-      objectReference: {fileID: 0}
+    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 1782604170}
+    - target: {fileID: 114740706278255354, guid: 3f7fa313235509c42909f5d9c41c5d5d,
+        type: 2}
+      propertyPath: theHealthHandler
+      value: 
+      objectReference: {fileID: 1637616377}
     - target: {fileID: 114924523824428058, guid: 3f7fa313235509c42909f5d9c41c5d5d,
         type: 2}
       propertyPath: target
@@ -12926,21 +12909,9 @@ Prefab:
       propertyPath: target1
       value: 
       objectReference: {fileID: 1792822935}
-    - target: {fileID: 4572527130635552, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4590505074520724, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572527130635552, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 22.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
-      propertyPath: m_TagString
-      value: Shark
+      propertyPath: m_Name
+      value: night-wave-01 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f7fa313235509c42909f5d9c41c5d5d, type: 2}
@@ -14933,36 +14904,6 @@ Transform:
   m_Father: {fileID: 481170602}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2086235622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1239482220653018, guid: 3f7fa313235509c42909f5d9c41c5d5d,
-    type: 2}
-  m_PrefabInternal: {fileID: 88243653}
---- !u!61 &2086235625
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086235622}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.21917343, y: -0.73106575}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 22.59, y: 8.4}
-    newSize: {x: 22.59, y: 8.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 67.47756, y: 6.937868}
-  m_EdgeRadius: 0
 --- !u!1 &2112128228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1341007610843634, guid: e4d8032fdf84b834098c20994330d64a,

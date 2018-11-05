@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour {
     public GameOverMenu theGameOverScreen;
     public PauseMenu thePauseScreen;
     public GameWinMenu theWin;
+   // public RockFall theRock;
     public GameObject currentCheckpoint;
+    
 
 
     // Use this for initialization
@@ -21,7 +23,10 @@ public class GameManager : MonoBehaviour {
         theScoreHandler = FindObjectOfType<ScoreManager>();
         theHealthHandler = FindObjectOfType<HealthManager>();
 
+       
+
         playerStartPoint = thePlayer.transform.position;
+       
     }
 
     public void GameOver()

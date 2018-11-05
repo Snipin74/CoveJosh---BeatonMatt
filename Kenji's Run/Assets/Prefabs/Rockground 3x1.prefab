@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 61115614565787258}
   m_Layer: 10
   m_Name: Rockground 3x1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1090115565084570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.95795, y: 0.45647004, z: 1.5221354}
+  m_LocalPosition: {x: -218.3694, y: -10.287008, z: -0.01953137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4673448148968150}
@@ -124,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1568464668523454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2120476, y: 8.80353, z: -1.5221354}
+  m_LocalPosition: {x: 1.2120476, y: 8.87, z: -1.5221354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4097747512147818}

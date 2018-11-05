@@ -39,6 +39,7 @@ public class NinjaStar : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Destroy(gameObject);
+        if(collision.tag == "Enemy" || collision.tag == "Ground")
         gameObject.SetActive(false);
     }
 }

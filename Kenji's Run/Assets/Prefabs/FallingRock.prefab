@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212894995986436396}
   - component: {fileID: 61803424965029268}
   - component: {fileID: 114345986198823490}
-  - component: {fileID: 50268756950468306}
+  - component: {fileID: 50295493805072342}
   m_Layer: 10
   m_Name: FallingRock
-  m_TagString: Untagged
+  m_TagString: Falling Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,13 +37,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341007610843634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 235.3, y: 2.2, z: 0}
+  m_LocalPosition: {x: 88.62, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50268756950468306
+--- !u!50 &50295493805072342
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!61 &61803424965029268
 BoxCollider2D:
   m_ObjectHideFlags: 1

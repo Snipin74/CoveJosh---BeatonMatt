@@ -128,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1821778751967364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.690685, y: 0.38812566, z: 0.828125}
+  m_LocalPosition: {x: -32.690685, y: -0.12, z: 0.828125}
   m_LocalScale: {x: 0.64, y: 0.5, z: 0}
   m_Children:
   - {fileID: 4960647869881568}
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!58 &58244869656885662
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -306,10 +306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24c87498385521b419309aed32e1e888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 8
   IsAttacking: 0
-  stopDistance: 6
-  healthManager: {fileID: 0}
+  stopDistance: 8
+  lockedY: -2.85
 --- !u!212 &212460436740136186
 SpriteRenderer:
   m_ObjectHideFlags: 1

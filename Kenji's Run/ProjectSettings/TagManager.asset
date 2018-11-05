@@ -10,6 +10,7 @@ TagManager:
   - Attack
   - Shark
   - Chest
+  - Ground
   layers:
   - Default
   - TransparentFX

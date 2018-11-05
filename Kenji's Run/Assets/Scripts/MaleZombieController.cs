@@ -11,7 +11,8 @@ public class MaleZombieController : MonoBehaviour {
     private Animator myAnimator;
     private Transform myPlayer;
     private SpriteRenderer spriteRenderer;
-    public EnemyHealth healthManager;
+    private EnemyHealth healthManager;
+    public float lockedY;
 
 
 
@@ -33,6 +34,7 @@ public class MaleZombieController : MonoBehaviour {
         healthManager = gameObject.GetComponent<EnemyHealth>();
 
         IsAttacking = false;
+        
     }
 
     // Update is called once per frame
@@ -40,6 +42,7 @@ public class MaleZombieController : MonoBehaviour {
     {
         if (Vector3.Distance(transform.position, myPlayer.position) < stopDistance)
         {
+            
             transform.position = Vector2.MoveTowards(transform.position, myPlayer.position, moveSpeed * Time.deltaTime);
             myAnimator.SetFloat("Speed", moveSpeed);
 
@@ -50,6 +53,11 @@ public class MaleZombieController : MonoBehaviour {
             else
             {
                 spriteRenderer.flipX = false;
+            }
+
+            if(myPlayer.transform.position.y != transform.position.y )
+            {
+                transform.position = new Vector2(transform.position.x, lockedY);
             }
         }
         else

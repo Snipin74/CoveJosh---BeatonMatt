@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 61698127930807722}
   m_Layer: 10
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,9 +99,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850599276255656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7978411, y: -3.015, z: 0}
-  m_LocalScale: {x: 22.40945, y: 0.65, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -128.6694, y: -6.7470093, z: -1.5416667}
+  m_LocalScale: {x: 22.409449, y: 0.65, z: 1}
   m_Children:
   - {fileID: 4441442448501272}
   - {fileID: 4751780959341428}

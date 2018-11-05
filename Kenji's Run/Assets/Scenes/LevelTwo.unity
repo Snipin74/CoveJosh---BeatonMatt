@@ -891,6 +891,12 @@ Prefab:
       propertyPath: currentCheckpoint
       value: 
       objectReference: {fileID: 1906415487}
+    - target: {fileID: 114632186819494362, guid: cbf63b6b4fdde02499cae12a048cf132,
+        type: 2}
+      propertyPath: theRock
+      value: 
+      objectReference: {fileID: 114345986198823490, guid: e4d8032fdf84b834098c20994330d64a,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf63b6b4fdde02499cae12a048cf132, type: 2}
   m_IsPrefabAsset: 0
@@ -903,11 +909,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4424078614336720, guid: 9863369ca7fb5dc4db55784aeb4726fe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 55.41
+      value: 107.4
       objectReference: {fileID: 0}
     - target: {fileID: 4424078614336720, guid: 9863369ca7fb5dc4db55784aeb4726fe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 2.45
       objectReference: {fileID: 0}
     - target: {fileID: 4424078614336720, guid: 9863369ca7fb5dc4db55784aeb4726fe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -995,6 +1001,10 @@ Prefab:
       propertyPath: theHealthHandler
       value: 
       objectReference: {fileID: 1507409093}
+    - target: {fileID: 1111443239810876, guid: 19326c52622f663459d8834ee1c8a0f4, type: 2}
+      propertyPath: m_TagString
+      value: Kill Line
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19326c52622f663459d8834ee1c8a0f4, type: 2}
   m_IsPrefabAsset: 0
@@ -1379,6 +1389,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114345986198823490, guid: e4d8032fdf84b834098c20994330d64a,
+        type: 2}
+      propertyPath: theGameManager
+      value: 
+      objectReference: {fileID: 740462982}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4d8032fdf84b834098c20994330d64a, type: 2}
   m_IsPrefabAsset: 0
@@ -2226,6 +2241,11 @@ Prefab:
     - target: {fileID: 4710134439662694, guid: 122f013c88f5cbd42b28ec3e5e4536ee, type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194107109232174, guid: 122f013c88f5cbd42b28ec3e5e4536ee,
+        type: 2}
+      propertyPath: lockedY
+      value: -2.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f013c88f5cbd42b28ec3e5e4536ee, type: 2}

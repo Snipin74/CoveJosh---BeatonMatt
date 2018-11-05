@@ -11,6 +11,8 @@ TagManager:
   - Shark
   - Chest
   - Ground
+  - Falling Rock
+  - Kill Line
   layers:
   - Default
   - TransparentFX

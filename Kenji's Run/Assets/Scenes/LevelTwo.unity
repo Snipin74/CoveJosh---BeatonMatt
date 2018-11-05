@@ -2721,22 +2721,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db19af3e99ad63e49b86be9e5e3f4dde, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1581526368 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1117141764929100, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1697433643}
---- !u!114 &1581526371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1581526368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d73e9a5e41eb44589fea94b9b518f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1633083708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955879335469358, guid: ac7aca578d26939489aa39380453112e,
@@ -2831,26 +2815,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 61210565256658126, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212656512703680622, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-        type: 2}
-      propertyPath: damageToGive
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
-        type: 2}
-      propertyPath: theObjectPool
-      value: 
-      objectReference: {fileID: 791376375}
     - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
         type: 2}
       propertyPath: theGameManager
@@ -2861,8 +2825,12 @@ Prefab:
       propertyPath: theHealthHandler
       value: 
       objectReference: {fileID: 1507409093}
-    m_RemovedComponents:
-    - {fileID: 61210565256658126, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
+    - target: {fileID: 114823407022666730, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3,
+        type: 2}
+      propertyPath: theObjectPool
+      value: 
+      objectReference: {fileID: 791376375}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5410f1bdcc4e8694ab1b3d0504cac4c3, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1708658480 stripped
